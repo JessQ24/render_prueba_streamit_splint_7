@@ -1,0 +1,2 @@
+# render_prueba_streamit_splint_7
+Práctica
