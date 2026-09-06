@@ -14,11 +14,11 @@
 
 Este proyecto consiste en realizar un **Análisis Exploratorio de Datos (EDA)** sobre un conjunto de datos de vehículos usados en Estados Unidos.
 
-El objetivo fue explorar las características de los vehículos, identificar patrones en los datos y crear **visualizaciones interactivas** que permitieran comprender mejor la información.
+El objetivo fue explorar las características de los vehículos, identificar patrones en los datos y crear **visualizaciones interactivas** para facilitar la comprensión de la información.
 
-Como parte del proyecto, el análisis realizado en un **Jupyter Notebook** se transformó posteriormente en una **aplicación web interactiva desarrollada con Streamlit**.
+Después de realizar el análisis en un **Jupyter Notebook**, desarrollé una aplicación web utilizando **Streamlit** para presentar los resultados de una manera interactiva.
 
-Finalmente, la aplicación fue desplegada en **Render**, permitiendo acceder al análisis desde la web.
+Finalmente, la aplicación fue desplegada en **Render**.
 
 ---
 
@@ -26,9 +26,9 @@ Finalmente, la aplicación fue desplegada en **Render**, permitiendo acceder al 
 
 * 🔎 Explorar un conjunto de datos de vehículos.
 * 🧹 Analizar y preparar los datos.
-* 📊 Crear visualizaciones para comprender la información.
+* 📊 Crear visualizaciones para comprender mejor la información.
 * 📈 Identificar patrones en las características de los vehículos.
-* 💻 Desarrollar una aplicación web interactiva.
+* 💻 Crear una aplicación web interactiva.
 * 🚀 Desplegar la aplicación en Render.
 
 ---
@@ -42,34 +42,25 @@ render_prueba_streamit_splint_7/
 │   └── 📓 EDA.ipynb
 │
 ├── 🐍 app.py
+├── 🚗 vehicles_us.csv
 ├── 📄 requirements.txt
 ├── 📄 README.md
 ├── 📄 .gitignore
 └── 📄 main
 ```
 
-### 📓 `EDA.ipynb`
-
-Notebook donde se realizó el **análisis exploratorio de los datos**, incluyendo la exploración del dataset y la creación de visualizaciones.
-
-### 🐍 `app.py`
-
-Archivo principal de la aplicación desarrollada con **Streamlit**.
-
-### 📦 `requirements.txt`
-
-Contiene las dependencias necesarias para ejecutar el proyecto.
-
 ---
 
-# 🔬 Análisis Exploratorio de Datos
+## 🔬 Análisis Exploratorio de Datos
 
-Para comenzar, se cargó el conjunto de datos de vehículos y se realizó una exploración inicial para conocer sus características.
+El análisis se realizó utilizando **Python y Jupyter Notebook**.
+
+Durante esta etapa se exploraron los datos y se crearon diferentes visualizaciones para comprender mejor las características de los vehículos.
 
 Entre las actividades realizadas se encuentran:
 
-* 📋 Exploración de la estructura del dataset.
-* 🔍 Revisión de variables.
+* 📋 Exploración inicial del dataset.
+* 🔍 Revisión de las variables.
 * 🧹 Análisis de los datos.
 * 📊 Creación de visualizaciones.
 * 📈 Interpretación de los resultados.
@@ -78,57 +69,63 @@ Entre las actividades realizadas se encuentran:
 
 ## 📊 Visualizaciones
 
-Una de las visualizaciones desarrolladas fue un **histograma del kilometraje de los vehículos**.
+Se utilizaron gráficos interactivos mediante **Plotly Express**.
+
+Por ejemplo, se creó un histograma para analizar la distribución del kilometraje de los vehículos:
 
 ```python
 fig = px.histogram(car_data, x="odometer")
 fig.show()
 ```
 
-Este gráfico permite observar cómo se distribuye el kilometraje dentro del conjunto de vehículos.
-
-Además, se utilizaron visualizaciones interactivas mediante **Plotly**, lo que permite explorar los datos de una manera más dinámica.
+Esta visualización permite observar cómo se distribuye el kilometraje dentro del conjunto de datos.
 
 ---
 
 # 💻 Aplicación Web
 
-Después de realizar el análisis exploratorio, se desarrolló una aplicación utilizando **Streamlit**.
+El análisis fue convertido en una aplicación web utilizando **Streamlit**.
 
-La aplicación permite al usuario interactuar con los datos y generar visualizaciones mediante controles dentro de la página.
+La aplicación permite interactuar con los datos y generar visualizaciones mediante controles dentro de la interfaz.
 
-### ⚙️ Tecnologías principales
+### 🚀 Demo
 
-| Tecnología          | Utilización                  |
-| ------------------- | ---------------------------- |
-| 🐍 Python           | Desarrollo del proyecto      |
-| 🐼 Pandas           | Manipulación de datos        |
-| 📊 Plotly           | Visualizaciones interactivas |
-| 🎨 Streamlit        | Aplicación web               |
-| 📓 Jupyter Notebook | Análisis exploratorio        |
-| 🐙 Git & GitHub     | Control de versiones         |
-| 🚀 Render           | Despliegue                   |
+<p align="center">
+
+### 👉 [🌐 Ver aplicación en Streamlit](https://render-prueba-streamit-splint-7.onrender.com/)
+
+</p>
 
 ---
 
-# 🚀 Despliegue
+## 🛠️ Tecnologías utilizadas
 
-La aplicación fue desplegada utilizando **Render**.
+| Tecnología              | Uso                              |
+| ----------------------- | -------------------------------- |
+| 🐍 **Python**           | Lenguaje principal               |
+| 🐼 **Pandas**           | Manipulación y análisis de datos |
+| 📊 **Plotly Express**   | Visualizaciones interactivas     |
+| 🎨 **Streamlit**        | Desarrollo de la aplicación web  |
+| 📓 **Jupyter Notebook** | Análisis exploratorio            |
+| 🐙 **Git & GitHub**     | Control de versiones             |
+| 🚀 **Render**           | Despliegue de la aplicación      |
 
-El flujo completo del proyecto fue:
+---
+
+## 🚀 Flujo del proyecto
 
 ```text
 🚗 Dataset de vehículos
         ↓
-🧹 Preparación y exploración
+🧹 Preparación de datos
         ↓
-🔎 Análisis Exploratorio de Datos
+🔎 Análisis Exploratorio
         ↓
 📊 Visualizaciones
         ↓
-🐍 Aplicación con Python
+🐍 Desarrollo con Python
         ↓
-🎨 Streamlit
+🎨 Aplicación Streamlit
         ↓
 🐙 GitHub
         ↓
@@ -139,28 +136,27 @@ El flujo completo del proyecto fue:
 
 ---
 
-# 🧠 Lo que aprendí
+## 🧠 Aprendizajes
 
-Este proyecto me permitió practicar un flujo completo de trabajo en **Data Analytics**, desde la exploración de un dataset hasta el despliegue de una aplicación web.
+Este proyecto me permitió practicar un flujo completo de trabajo de **Data Analytics**, desde la exploración de un dataset hasta el despliegue de una aplicación web.
 
 ### 📊 Análisis de datos
 
 * Exploración de datasets.
 * Manipulación de datos con Pandas.
 * Análisis de variables.
-* Creación e interpretación de gráficos.
+* Creación e interpretación de visualizaciones.
 
 ### 📈 Visualización
 
 * Creación de histogramas.
 * Visualizaciones interactivas.
 * Uso de Plotly Express.
-* Presentación visual de resultados.
 
 ### 💻 Desarrollo
 
 * Creación de aplicaciones con Streamlit.
-* Organización de archivos de un proyecto.
+* Organización de archivos.
 * Manejo de dependencias mediante `requirements.txt`.
 
 ### 🚀 Deployment
@@ -171,25 +167,21 @@ Este proyecto me permitió practicar un flujo completo de trabajo en **Data Anal
 
 ---
 
-# 🌐 Demo
+## 🌐 Demo del proyecto
 
-🚀 **Aplicación desplegada en Render:**
+### 🚀 Aplicación
 
-👉 **[Ver aplicación](PEGA_AQUÍ_TU_ENLACE_DE_RENDER)**
+**[Abrir aplicación de Streamlit](https://render-prueba-streamit-splint-7.onrender.com/)**
 
----
+### 🐙 Repositorio
 
-# 📁 Repositorio
-
-🐙 **GitHub:**
-
-👉 [JessQ24/render_prueba_streamit_splint_7](https://github.com/JessQ24/render_prueba_streamit_splint_7)
+**[Ver código en GitHub](https://github.com/JessQ24/render_prueba_streamit_splint_7)**
 
 ---
 
-# 👩‍💻 Proyecto de Data Analytics
+## 👩‍💻 Data Analytics Project
 
-Este proyecto forma parte de mi formación en **Análisis de Datos**, donde estoy desarrollando habilidades para transformar datos en información útil mediante Python, visualizaciones y aplicaciones interactivas.
+Este proyecto forma parte de mi formación en **Análisis de Datos**, aplicando Python para transformar datos en información mediante análisis, visualización y desarrollo de aplicaciones interactivas.
 
 ### 💼 Skills
 
